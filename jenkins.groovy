@@ -6,6 +6,7 @@ pipeline {
             steps {
                 // Aqui você pode adicionar etapas para preparar o ambiente
                 echo 'Preparando o ambiente...'
+                sh 'ping -c 4 192.168.0.17'
             }
         }
         stage('Build') {
